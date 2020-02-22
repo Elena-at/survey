@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link href="survey.css" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 class="h1">Becoming a programmer</h1>
+    
+            <p class="intro">This survey wants to know how long does it take to learn programming?</p>
+            <p class="intro">Please answer the following questions. Your answers are very important to us:)</p>
+            <p class="intro">Fields marked with(*) are required</p>
+    
+
+        <form>
+            
+            <fieldset class="survey-form">
+                <legend class="">Personal Information</legend>
+                <label for="name">Name*:</label>
+                <input type="text" class="text-field" id="name" placeholder="Enter your name" name="firstname">
+                
+                
+                <label for="email">Email*:</label>
+                <input type="email" class="text-field" id="email" placeholder="Enter your email" name="enteremail">
+                
+                 <label for="age">Age:</label>
+                <input type="age" class="text-field" id="age" placeholder="Enter your age" name="enterage">
+               
+            </fieldset>
+            
+            <fieldset class="survey-questions">
+                <legend class="">Survey questions:</legend>
+                
+                <label for="why"> 1. Why do you want to learn programming?</label>
+                <select name="tolearn" id="learn">
+                    <option value="q1">Because it's interesting</option>
+                    <option value="q2">Because I want to learn something new</option>
+                    <option value="q3">To cut gender differences</option>
+                    <option value="q4">To prove myself I can</option>
+                    <option value="q5">To have a good sallary</option>
+                    <option value="q6">To hack all bad companies websites</option>
+                </select>
+             
+                
+                <p>2. Which programming languages do you know?</p>
+                <input type="radio" name="languages" value="Java Script" id="option-1" checked>
+                <label for="option-1">Java Script</label>
+                <input type="radio" name="languages" value="Ruby" id="option-2">
+                <label for="option-2">Ruby</label>
+                <input type="radio" name="languages" value="Java" id="option-3">
+                <label for="option-3">Java</label>
+                <input type="radio" name="languages" value="C++" id="option-4">
+                <label for="option-4">C++</label>
+                <br><br>
+                
+                <label for="why"> 3. How many years of programming background do you have?</label>
+                <input type="radio" name="background" value="0-1" id="option-1" checked>
+                <label for="option-1">0-1</label>
+                <input type="radio" name="background" value="2-3" id="option-2">
+                <label for="option-2">2-3</label>
+                <input type="radio" name="background" value="4-5" id="option-3">
+                <label for="option-3">4-5</label>
+                <input type="radio" name="background" value="5+" id="option-4">
+                <label for="option-4">5+</label>
+                <br><br>
+                
+                <label for="what"> 4. What kind of help would you like to receive from your mentor?</label>
+                <textarea rows="3" cols="100" name="textarea"></textarea>
+                <br><br>
+            </div>
+            <button class="button" id="submit" type="submit">Submit</button>
+        </div>
+        
+    </form>
+</body>
