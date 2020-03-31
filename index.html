@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         
         <h1 class="h1">Becoming a programmer</h1>
     
@@ -20,28 +20,33 @@
             <p class="intro">Please answer the following questions. Your answers are very important to us:)</p>
             <p class="intro">Fields marked with(*) are required</p>
     
-
+<div class="contact">
         <form>
             
             <fieldset class="survey-form">
-                <legend class="">Personal Information</legend>
-                <label for="name">Name*:</label>
-                <input type="text" class="text-field" id="name" placeholder="Enter your name" name="firstname">
+                <legend class="legend-information">Personal Information</legend>
+                <div>
+                <label for="name" class="label">Name*:</label>
+                <input type="text" id="name" class="text" placeholder="Enter your name" name="firstname" required>
+                </div>
                 
-                
-                <label for="email">Email*:</label>
-                <input type="email" class="text-field" id="email" placeholder="Enter your email" name="enteremail">
-                
-                 <label for="age">Age:</label>
-                <input type="age" class="text-field" id="age" placeholder="Enter your age" name="enterage">
+                <div>
+                <label for="email" class="label">Email*:</label>
+                <input type="email" id="email" class="email" placeholder="Enter your email" name="enteremail" required>
+                </div>
+
+                <div>
+                <label for="number" class="label">Age:</label>
+                <input type="number" id="number" class="number" placeholder="Enter your age" name="enterage">
+                </div>
                
             </fieldset>
             
             <fieldset class="survey-questions">
-                <legend class="">Survey questions:</legend>
+                <legend class="legend-questions">Survey questions:</legend>
                 
-                <label for="why"> 1. Why do you want to learn programming?</label>
-                <select name="tolearn" id="learn">
+                <p> 1. Why do you want to learn programming?</p>
+                <select name="tolearn" class="whylearning" id="learn">
                     <option value="q1">Because it's interesting</option>
                     <option value="q2">Because I want to learn something new</option>
                     <option value="q3">To cut gender differences</option>
@@ -60,25 +65,29 @@
                 <label for="option-3">Java</label>
                 <input type="radio" name="languages" value="C++" id="option-4">
                 <label for="option-4">C++</label>
-                <br><br>
+               
                 
-                <label for="why"> 3. How many years of programming background do you have?</label>
-                <input type="radio" name="background" value="0-1" id="option-1" checked>
-                <label for="option-1">0-1</label>
-                <input type="radio" name="background" value="2-3" id="option-2">
-                <label for="option-2">2-3</label>
-                <input type="radio" name="background" value="4-5" id="option-3">
-                <label for="option-3">4-5</label>
-                <input type="radio" name="background" value="5+" id="option-4">
-                <label for="option-4">5+</label>
-                <br><br>
+                <p> 3. How many years of programming background do you have?</p>
+                <input type="checkbox" name="background" value="0-1" id="option1"checked>
+                <label for="option1">0-1</label>
+                <input type="checkbox" name="background" value="2-3"  id="option2">
+                <label for="option2">2-3</label>
+                <input type="checkbox" name="background" value="4-5" id="option3">
+                <label for="option3">4-5</label>
+                <input type="checkbox" name="background" value="5+" id="option4">
+                <label for="option4">5+</label>
+             
                 
-                <label for="what"> 4. What kind of help would you like to receive from your mentor?</label>
-                <textarea rows="3" cols="100" name="textarea"></textarea>
-                <br><br>
-            </div>
-            <button class="button" id="submit" type="submit">Submit</button>
-        </div>
-        
+                <p> 4. What kind of help would you like to receive from your mentor?</p>
+                <textarea rows="3" cols="100" class="textarea" name="textarea"></textarea>
+             
+    </fieldset>
+
+        <div>
+        <button class="button" id="submit" type="submit">Submit</button>
+       </div>
+
     </form>
+ 
+        
 </body>
